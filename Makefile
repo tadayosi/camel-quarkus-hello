@@ -19,3 +19,6 @@ k8s-run:
 
 k8s-deploy:
 	mvn package -DskipTests -Dquarkus.kubernetes.deploy=true -Dquarkus.kubernetes-client.trust-certs=true
+
+itests:
+	mvn verify -P itests
